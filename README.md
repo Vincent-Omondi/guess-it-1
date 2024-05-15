@@ -145,7 +145,7 @@ This project is licensed under the MIT License.
 ## Contact
 If you have any questions or need further assistance, please feel free to contact the project maintainer:
 
-[X](https://tweeter.com/vinomondi_1)
+[X](https://twitter.com/vinomondi_1/)
 
 [Github](https://github.com/Vincent-Omondi/)
 
