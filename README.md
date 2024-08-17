@@ -63,7 +63,7 @@ git clone https://github.com/Vincent-Omondi/guess-it-1
 Navigate to the project directory:
 
 ```sh
-cd guess-it-1
+cd guess-it-1/student/
 ```
 
 <p align="right">(<a href="#guess-it-1">back to top</a>)</p>
@@ -76,7 +76,7 @@ To use Math Skills, follow these steps:
 1. Run the script
 
     ```sh
-    ./script.sh
+    go run .
     ```
 2. Provide input:
 
