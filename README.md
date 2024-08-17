@@ -1,10 +1,11 @@
 <a name="readme-top"></a>
 
 
-# Math Skills
-## Statistical Analysis Tool
+# Guess-it-1
 
-This project is a command-line tool written in Go that performs statistical analysis on numerical data read from a file. It calculates the average, median, variance, and standard deviation of the data and provides the results in a user-friendly format.
+## Project Description
+
+This is a number-range predictor designed to approximate the range within which the next number in a sequence would fall. It does so by applying statistical methods, mean and standard deviation, on a moving window of the last five numbers of the sequence for making the prediction.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -34,7 +35,7 @@ This project is a command-line tool written in Go that performs statistical anal
 
 
 ## About The Project
-The primary objective of this project is to create a robust and efficient statistical analysis tool that can handle large datasets with ease. The tool is designed to read numerical data from a file, perform various statistical calculations, and display the results in a readable format.
+The intention of this project is to present some statistical calculations and scripting that will offer a simple, yet effective way to guess the range of the next number based on recent data points
 
 ### Built With
 <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" width="60" height="60">
@@ -42,105 +43,92 @@ The primary objective of this project is to create a robust and efficient statis
 
 
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 
 ## Getting Started
-
-To get started with Math Skills, follow these instructions:
+Follow these simple steps and get a local copy up and running.
 
 ### Prerequisites
-- Go installed on your machine.
-- Basic understanding of Go programming language.
+- Go installed on your local machine.
+- A terminal or command prompt to run the script.
 
 
 ### Installation
 Clone the repository:
 ```sh
-git clone https://github.com/Vincent-Omondi/math-skills.git
+git clone https://github.com/Vincent-Omondi/guess-it-1
 ``` 
 
 Navigate to the project directory:
 
 ```sh
-cd math-skills
+cd guess-it-1
 ```
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 
 ## Usage
 
 To use Math Skills, follow these steps:
 
-1. Prepare a text file containing the dataset you want to analyze. Each line of the file should represent one value of the dataset.
+1. Run the script
 
-2. Compile the program using the following command
+    ```sh
+    ./script.sh
+    ```
+2. Provide input:
 
-```sh
-go build
+   Enter a sequence of numbers, one per line. The program will print out the predicted range for the next number in the sequence.
+
+   Example:
+
+``` console
+189
+113
+75 227
+121
+72 209
+114
+70 197
+145
+78 193
+110
+75 188
+
 ```
-3. Run the compiled program with the file path as an argument
 
-```sh
-./math-skills <file_path>
-```
-Replace <file_path> with the path to the file containing the numerical data you want to analyze. The file should have one number per line, and non-numeric values and overflow will be ignored.
-Example:
-```sh
-./math-skills data.txt
-```
-
-The program will output the statistics in the following manner (the following numbers are only examples)
-
-```
-User$ ./math-skills data.txt
-Average: 147
-Median: 146
-Variance: 769
-Standard Deviation: 28
-```
-All values are rounded to the nearest integer.
-The program accepts a wide range of files including the following:
-
-- **Plain Text Formats**: `.txt`, `.csv`
-- **Spreadsheet Formats**: `.xls`, `.xlsx`, `.ods`
-- **Database Formats**: `.sqlite`, `.dbf`
-- **JSON and XML Formats**: `.json`, `.xml`
-- **Specialized Data Formats**: `.hdf`, `.nc`
-- **Statistical Software Formats**: `.sav`, `.dta`
-- **Compressed Formats**: `.zip`, `.gz`
-- **Web and API Formats**: `.html`, `.json` (from API calls)
-- **Geographic Information System (GIS) Formats**: `.shp`, `.kml`
-
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 ## RoadMap
-* Add support for different input file formats (e.g., CSV, xlsx)
-* Implement additional statistical measures (e.g., quartiles, percentiles)
-* Enhance error handling and input validation
-* Optimization for large datasets.
-* Develop a graphical user interface (GUI) for better user experience
+ Improve the statistical methods for range prediction.
+ Implement different window sizes for comparison.
+ Add support for other statistical models.
+ Include a web-based interface for ease of use.
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 
 ## Contributing
 
-Contributions are welcome! If you want to contribute to Math Skills, follow these steps:
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-1. Fork the project.
-2. Create your feature or bugfix branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature/bugfix'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
+If you have a suggestion that would make this project better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+  1. Fork the Project
+  2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+  3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+  4.  Push to the Branch (git push origin feature/AmazingFeature)
+  5. Open a Pull Request
+
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 
 ## License
 This project is licensed under the MIT License.
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 ## Contact
 If you have any questions or need further assistance, please feel free to contact the project maintainer:
@@ -149,11 +137,11 @@ If you have any questions or need further assistance, please feel free to contac
 
 [Github](https://github.com/Vincent-Omondi/)
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
 
 
 ## Acknowledgments
 
 Special thanks to the Zone01 for their valuable resources and support.
 
-<p align="right">(<a href="#math-skills">back to top</a>)</p>
+<p align="right">(<a href="#guess-it-1">back to top</a>)</p>
